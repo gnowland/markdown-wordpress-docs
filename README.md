@@ -9,8 +9,9 @@ A lightweight WordPress Plugin that generates documentation pages for your WordP
 ### Details
 
 - `/docs` should contain all your Markdown files
-- Links to `../[DOCUMENT_NAME.md]`, `./[DOCUMENT_NAME.md]` or `docs/[DOCUMENT_NAME.md]` will automatically route to display the file using URL Parameters `&doc=[DOCUMENT_NAME].md`
-- I recommend dividing files into subjects and including a Table of Contents in `docs/README.md`.
+- Links to `../[DOCUMENT_NAME.md]`, `./[DOCUMENT_NAME.md]` or `docs/[DOCUMENT_NAME.md]` will automatically route to display the file using URL Parameters `?page=docs&doc=[DOCUMENT_NAME].md`
+  - I recommend dividing files into subjects and including a Table of Contents in `docs/README.md`.
+- The help page will be displayed in the Dashboard sub-menu
 
 ## Installation ##
 
@@ -32,7 +33,7 @@ or in the WordPress Admin panel.
 * `git clone` into your sites plugin folder
 * Activate via WordPress or wp-cli (see above) or in WordPress Admin
 
-### Manual ###
+### Manually ###
 
 * Download the [zip file](https://github.com/gnowland/wp-jet-fuel/archive/master.zip)
 * Unzip to your sites plugin folder

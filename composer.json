@@ -1,0 +1,20 @@
+{
+  "name": "gnowland/markdown-wordpress-docs",
+  "description": "Generate WordPress website documentation from Markdown Files",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Gifford Nowland",
+      "email": "hi@giffordnowland.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/gnowland/parsedown.git"
+    }
+  ],
+  "require": {
+    "erusev/parsedown": "1.7.4-alpha"
+  }
+}

@@ -1,0 +1,452 @@
+/* The following code is a derivative work of https://gist.github.com/tuzz/3331384 Copyright (c) 2017 Chris Patuzzo, licensed under the MIT License:
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+.wrap,
+.wrap p {
+  font-family: Roboto, Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.wrap > *:first-child {
+  margin-top: 0 !important;
+}
+
+.wrap > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.wrap a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+.wrap a:hover,
+.wrap a:focus {
+  text-decoration: underline;
+}
+
+.wrap a.absent {
+  color: #cc0000;
+}
+
+.wrap a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.wrap h1,
+.wrap h2,
+.wrap h3,
+.wrap h4,
+.wrap h5,
+.wrap h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+.wrap h2:first-child,
+.wrap h1:first-child,
+.wrap h1:first-child + h2,
+.wrap h3:first-child,
+.wrap h4:first-child,
+.wrap h5:first-child,
+.wrap h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap h1:hover a.anchor,
+.wrap h2:hover a.anchor,
+.wrap h3:hover a.anchor,
+.wrap h4:hover a.anchor,
+.wrap h5:hover a.anchor,
+.wrap h6:hover a.anchor {
+  text-decoration: none;
+}
+
+.wrap h1 tt,
+.wrap h1 code {
+  font-size: inherit;
+}
+
+.wrap h2 tt,
+.wrap h2 code {
+  font-size: inherit;
+}
+
+.wrap h3 tt,
+.wrap h3 code {
+  font-size: inherit;
+}
+
+.wrap h4 tt,
+.wrap h4 code {
+  font-size: inherit;
+}
+
+.wrap h5 tt,
+.wrap h5 code {
+  font-size: inherit;
+}
+
+.wrap h6 tt,
+.wrap h6 code {
+  font-size: inherit;
+}
+
+.wrap h1 {
+  font-size: 28px;
+  color: black;
+}
+
+.wrap h2 {
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+.wrap h3 {
+  font-size: 18px;
+}
+
+.wrap h4 {
+  font-size: 16px;
+}
+
+.wrap h5 {
+  font-size: 14px;
+}
+
+.wrap h6 {
+  color: #777777;
+  font-size: 14px;
+}
+
+.wrap p,
+.wrap blockquote,
+.wrap ul,
+.wrap ol,
+.wrap dl,
+.wrap table,
+.wrap pre {
+  margin: 15px 0;
+}
+
+.wrap li > ul {
+  margin: 0;
+}
+
+.wrap hr {
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+.wrap > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap > h3:first-child,
+.wrap > h4:first-child,
+.wrap > h5:first-child,
+.wrap > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap a:first-child h1,
+.wrap a:first-child h2,
+.wrap a:first-child h3,
+.wrap a:first-child h4,
+.wrap a:first-child h5,
+.wrap a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.wrap h1 p,
+.wrap h2 p,
+.wrap h3 p,
+.wrap h4 p,
+.wrap h5 p,
+.wrap h6 p {
+  margin-top: 0;
+}
+
+.wrap li p.first {
+  display: inline-block;
+}
+
+.wrap li,
+.wrap dd {
+  margin-bottom: 0;
+}
+
+.wrap ul,
+.wrap ol {
+  padding-left: 30px;
+}
+
+.wrap ul :first-child,
+.wrap ol :first-child {
+  margin-top: 0;
+}
+
+.wrap ul :last-child,
+.wrap ol :last-child {
+  margin-bottom: 0;
+}
+
+.wrap dl {
+  padding: 0;
+}
+
+.wrap dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+.wrap dl dt:first-child {
+  padding: 0;
+}
+
+.wrap dl dt > :first-child {
+  margin-top: 0;
+}
+
+.wrap dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+.wrap dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+.wrap dl dd > :first-child {
+  margin-top: 0;
+}
+
+.wrap dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+.wrap blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+
+.wrap blockquote > :first-child {
+  margin-top: 0;
+}
+
+.wrap blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.wrap table {
+  padding: 0;
+  border-collapse:collapse;
+  width: 100%;
+}
+
+.wrap table tr {
+  border-top: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap table tr:nth-child(2n) {
+  background-color: #f8f8f82f;
+}
+
+.wrap table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.wrap table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.wrap table tr th :first-child,
+.wrap table tr td :first-child {
+  margin-top: 0;
+}
+
+.wrap table tr th :last-child,
+.wrap table tr td :last-child {
+  margin-bottom: 0;
+}
+
+.wrap img {
+  max-width: 100%;
+}
+
+.wrap span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.wrap span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+.wrap span.frame span img {
+  display: block;
+  float: left;
+}
+
+.wrap span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+
+.wrap span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.wrap span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+.wrap span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrap span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.wrap span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+.wrap span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.wrap span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+.wrap span.float-left span {
+  margin: 13px 0 0;
+}
+
+.wrap span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+.wrap span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+.wrap code,
+.wrap tt {
+  white-space: pre-wrap;
+  border-radius: 3px;
+}
+
+.wrap pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  border: none;
+  background: transparent;
+}
+
+.wrap .highlight pre {
+  background-color: #f8f8f82f;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.wrap pre {
+  background-color: #f8f8f82f;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code,
+.wrap pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+.wrap ul {
+  list-style: disc;
+}
