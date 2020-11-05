@@ -8,7 +8,7 @@
  * Version:        1.0.0
  * Author:         Gifford Nowland
  * Author URI:     https://hi@giffordnowland.com
- * License:        GPLv3
+ * License:        GPLv2.0+
  * 
  * @since             1.0.0
  * @package           Markdown_WordPress_Docs

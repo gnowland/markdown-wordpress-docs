@@ -1,7 +1,7 @@
 {
   "name": "gnowland/markdown-wordpress-docs",
   "description": "Generate WordPress website documentation from Markdown Files",
-  "license": "GPLv3",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Gifford Nowland",
