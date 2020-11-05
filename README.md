@@ -1,4 +1,4 @@
-# Markdown WordPress Docs
+# Build WordPress Admin Documentation/Help Pages from Markdown
 [![GitHub release](https://img.shields.io/github/release/gnowland/markdown-wordpress-docs.svg?style=flat-square)](https://github.com/gnowland/markdown-wordpress-docs/releases)
 |
 [![Packagist](https://img.shields.io/packagist/v/gnowland/markdown-wordpress-docs.svg?style=flat-square)](https://packagist.org/packages/gnowland/markdown-wordpress-docs)
