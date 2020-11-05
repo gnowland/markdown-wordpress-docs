@@ -35,6 +35,6 @@ or in the WordPress Admin panel.
 
 ### Manually ###
 
-* Download the [zip file](https://github.com/gnowland/wp-jet-fuel/archive/master.zip)
+* Download the [latest release](https://github.com/gnowland/markdown-wordpress-docs/releases) as a `.zip` file
 * Unzip to your sites plugin folder
 * Activate via WordPress Admin or wp-cli (see above)
