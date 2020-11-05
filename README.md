@@ -2,8 +2,11 @@
 A lightweight WordPress Plugin that generates documentation pages for your WordPress site from Markdown files.
 
 ## Use
-Add Markdown files to `docs/`
-[Install](#install) & Activate plugin in WordPress Admin
+
+1. Add Markdown files to `docs/`
+2. [Install](#install) & Activate plugin in WordPress Admin
+
+### Details
 
 - `/docs` should contain all your Markdown files
 - Links to `../[DOCUMENT_NAME.md]`, `./[DOCUMENT_NAME.md]` or `docs/[DOCUMENT_NAME.md]` will automatically route to display the file using URL Parameters `&doc=[DOCUMENT_NAME].md`
