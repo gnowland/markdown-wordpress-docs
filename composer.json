@@ -8,13 +8,7 @@
       "email": "hi@giffordnowland.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/gnowland/parsedown.git"
-    }
-  ],
   "require": {
-    "erusev/parsedown": "1.7.4-alpha"
+    "erusev/parsedown": "2.0.0"
   }
 }
