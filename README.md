@@ -1,4 +1,11 @@
 # Markdown WordPress Docs
+[![GitHub release](https://img.shields.io/github/release/gnowland/markdown-wordpress-docs.svg?style=flat-square)](https://github.com/gnowland/markdown-wordpress-docs/releases)
+|
+[![Packagist](https://img.shields.io/packagist/v/gnowland/markdown-wordpress-docs.svg?style=flat-square)](https://packagist.org/packages/gnowland/markdown-wordpress-docs)
+|
+[![buymeacoffee.com/gnowland](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/gnowland)
+
+
 A lightweight WordPress Plugin that generates documentation pages for your WordPress site from Markdown files.
 
 ## Use
